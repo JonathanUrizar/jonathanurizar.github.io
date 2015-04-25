@@ -1,0 +1,88 @@
+//========================================
+// SHARED
+//========================================
+
+body {
+    @media only screen and (max-width: 991px) {
+        text-align: center;
+    }
+}
+
+.container {
+    max-width: 960px;
+}
+
+#photo {
+    margin-top: 12px;
+    width: 100%;
+
+    @media only screen and (max-width: 991px) {
+        display: none;
+    }
+}
+
+#sliced-photo {
+    background-position: center;
+    border-radius: 16px;
+    margin: 20px auto;
+    height: 200px;
+
+    @media only screen and (min-width: 992px) {
+        display: none;
+    }
+}
+
+#page-title {
+    margin: 11px 0 24px 0;
+
+    @media only screen and (max-width: 991px) {
+        margin-top: 32px;
+    }
+}
+
+//========================================
+// NAVIGATION
+//========================================
+
+#nav-header {
+    .active {
+        a {
+            background-color: #E2E2E2;
+        }
+    }
+}
+
+#nav-sidebar {
+    li {
+        margin: 8px 0;
+    }
+
+    .active {
+        a {
+            background-color: #E2E2E2;
+        }
+
+        a:hover {
+            background-color: #EFEFEF;
+        }
+    }
+
+    background-color: #F8F8F8;
+    border-radius: 8px;
+}
+
+//========================================
+// CONTACT
+//========================================
+
+#contact-form {
+    @media only screen and (max-width: 991px) {
+        display: none;
+    }
+}
+
+#send-button {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+}

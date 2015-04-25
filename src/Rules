@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+compile '*' do
+  if item[:extension] == 'scss'
+    filter :sass, syntax: :scss
+    filter :relativize_paths, :type => :css
+  elsif not item.binary?
+    filter :erb
+    layout 'page'
+    filter :relativize_paths, :type => :html
+  end
+end
+
+route '*' do
+  if item.binary?
+    item.identifier.chop + '.' + item[:extension]
+  elsif item[:extension] == 'scss'
+    item.identifier.chop + '.css'
+  else
+    item.identifier + 'index.html'
+  end
+end
+
+layout '*', :erb

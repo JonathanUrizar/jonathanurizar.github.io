@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title><%= @item[:title] %></title>
+
+    <link rel="stylesheet" href="<%= @items['/style/'].path %>">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  </head>
+  <body>
+    <%= render 'partials/header' %>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img id="photo" class="img-rounded" src="/images/<%= @item[:image] %>.jpg" alt="photo">
+            <div id="sliced-photo" class="img-rounded"
+              style="
+                background-image: url('/images/<%= @item[:image] %>.jpg');
+                background-position: 0px <%= @item[:image_y] %>px;
+                width: <%= @item[:image_width] %>px;">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <%= yield %>
+          </div>
+        </div>
+    </div>
+
+    <%= render 'partials/footer' %>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </body>
+</html>

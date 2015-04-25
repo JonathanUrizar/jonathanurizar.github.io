@@ -1,0 +1,42 @@
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ju-h">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <% if @item[:filename].include? 'index' %>
+        <a class="navbar-brand" href="#">Jonathan Urizar</a>
+      <% else %>
+        <a class="navbar-brand" href="/">Jonathan Urizar</a>
+      <% end %>
+    </div>
+
+    <div id="ju-h", class="collapse navbar-collapse">
+      <ul id="nav-header" class="nav navbar-nav">
+        <% if @item[:filename].include? 'index' %>
+          <li class="active"><a href="#">Home</a></li>
+        <% else %>
+          <li><a href="/">Home</a></li>
+        <% end %>
+        <% if @item[:filename].include? 'biography' %>
+          <li class="active"><a href="#">Biography</a></li>
+        <% else %>
+          <li><a href="/biography">Biography</a></li>
+        <% end %>
+        <% if @item[:filename].include? 'teaching' %>
+          <li class="active"><a href="#">Teaching</a></li>
+        <% else %>
+          <li><a href="/teaching">Teaching</a></li>
+        <% end %>
+        <% if @item[:filename].include? 'contact' %>
+          <li class="active"><a href="#">Contact</a></li>
+        <% else %>
+          <li><a href="/contact">Contact</a></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>
