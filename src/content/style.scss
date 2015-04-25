@@ -2,6 +2,10 @@
 // SHARED
 //========================================
 
+html, body {
+    height: 100%;
+}
+
 body {
     @media only screen and (max-width: 991px) {
         text-align: center;
@@ -10,6 +14,12 @@ body {
 
 .container {
     max-width: 960px;
+}
+
+// PAGE
+
+#last {
+    margin-bottom: 36px;
 }
 
 #photo {
@@ -38,6 +48,28 @@ body {
     @media only screen and (max-width: 991px) {
         margin-top: 32px;
     }
+}
+
+// FOOTER
+
+.wrapper {
+    min-height: 100%;
+    margin: 0 auto -50px;
+}
+
+footer {
+    background-color: #EEE;
+    border-top: solid 1px #CCC;
+}
+
+footer, .push {
+    height: 50px;
+}
+
+#copyright {
+    color: #777;
+    line-height: 50px;
+    margin: 0;
 }
 
 //========================================

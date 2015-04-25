@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   </head>
   <body>
-    <nav class="navbar navbar-default">
+    <div class="wrapper">
+      <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ju-h">
@@ -44,18 +45,18 @@
 </nav>
 
 
-    <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <img id="photo" class="img-rounded" src="../images/three.jpg" alt="photo">
-            <div id="sliced-photo" class="img-rounded" style="
-                background-image: url('/images/three.jpg');
-                background-position: 0px -20px;
-                width: 400px;">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img id="photo" class="img-rounded" src="../images/three.jpg" alt="photo">
+              <div id="sliced-photo" class="img-rounded" style="
+                  background-image: url('/images/three.jpg');
+                  background-position: 0px -20px;
+                  width: 400px;">
+              </div>
             </div>
-          </div>
-          <div class="col-md-8">
-            <h2 id="page-title">Teaching</h2>
+            <div class="col-md-8">
+              <h2 id="page-title">Teaching</h2>
 <p>It is my firm belief that every student should be entitled to a quality education in music. If a student has the strong desire to learn and excel in music, he or she can attain any goal they set in mind. As an educator, I strive to teach a student to perform at a highly proficient technical level, but more importantly,  I promote the overall effect of the work from a musical standpoint. Every note is the most important note you'll ever play. </p>
 <h3>Teaching Rates</h3>
 <p>$30/Half Hour lesson; $50/Hour</p>
@@ -68,13 +69,21 @@ Kennesaw, GA 30144</p>
 <h3>Expectations</h3>
 <p>Each student is expected to come to each lesson prepared and ready to perform. This means that the student is expected to practice on a daily basis to make lesson time as productive and efficient as possible.</p>
 <h3>Cancellations</h3>
-<p>A notification of a cancellation or rescheduling should be given at least 24 hours in advance of the lesson. Failure to do so within 24 hours notice will result in a $20 fee.</p>
+<p id="last">A notification of a cancellation or rescheduling should be given at least 24 hours in advance of the lesson. Failure to do so within 24 hours notice will result in a $20 fee.</p>
 
+            </div>
           </div>
-        </div>
+      </div>
+
+      <div class="push"></div>
     </div>
 
-    
+    <footer>
+    <div class="container">
+        <p id="copyright" class="pull-right">© 2015 Jonathan Urizar</p>
+    </div>
+</footer>
+
 
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

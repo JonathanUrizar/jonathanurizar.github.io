@@ -1,9 +1,15 @@
+html, body {
+  height: 100%; }
+
 @media only screen and (max-width: 991px) {
   body {
     text-align: center; } }
 
 .container {
   max-width: 960px; }
+
+#last {
+  margin-bottom: 36px; }
 
 #photo {
   margin-top: 12px;
@@ -26,6 +32,22 @@
   @media only screen and (max-width: 991px) {
     #page-title {
       margin-top: 32px; } }
+
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto -50px; }
+
+footer {
+  background-color: #EEE;
+  border-top: solid 1px #CCC; }
+
+footer, .push {
+  height: 50px; }
+
+#copyright {
+  color: #777;
+  line-height: 50px;
+  margin: 0; }
 
 #nav-header .active a {
   background-color: #E2E2E2; }

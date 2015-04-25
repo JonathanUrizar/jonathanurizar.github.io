@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   </head>
   <body>
-    <nav class="navbar navbar-default">
+    <div class="wrapper">
+      <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ju-h">
@@ -44,18 +45,18 @@
 </nav>
 
 
-    <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <img id="photo" class="img-rounded" src="../images/four.jpg" alt="photo">
-            <div id="sliced-photo" class="img-rounded" style="
-                background-image: url('/images/four.jpg');
-                background-position: 0px -135px;
-                width: 393px;">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img id="photo" class="img-rounded" src="../images/four.jpg" alt="photo">
+              <div id="sliced-photo" class="img-rounded" style="
+                  background-image: url('/images/four.jpg');
+                  background-position: 0px -135px;
+                  width: 393px;">
+              </div>
             </div>
-          </div>
-          <div class="col-md-8">
-            <h2 id="page-title">Contact</h2>
+            <div class="col-md-8">
+              <h2 id="page-title">Contact</h2>
 <h3>Email</h3>
 <a href="mailto:jurizar13@hotmail.com">jurizar13@hotmail.com</a>
 <h3>Phone</h3>
@@ -75,11 +76,19 @@
   </form>
 </div>
 
+            </div>
           </div>
-        </div>
+      </div>
+
+      <div class="push"></div>
     </div>
 
-    
+    <footer>
+    <div class="container">
+        <p id="copyright" class="pull-right">© 2015 Jonathan Urizar</p>
+    </div>
+</footer>
+
 
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
