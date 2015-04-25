@@ -8,9 +8,6 @@ html, body {
 .container {
   max-width: 960px; }
 
-#last {
-  margin-bottom: 36px; }
-
 #photo {
   margin-top: 12px;
   width: 100%; }
@@ -32,6 +29,9 @@ html, body {
   @media only screen and (max-width: 991px) {
     #page-title {
       margin-top: 32px; } }
+
+.last {
+  margin-bottom: 36px; }
 
 .wrapper {
   min-height: 100%;
@@ -61,6 +61,10 @@ footer, .push {
     background-color: #E2E2E2; }
   #nav-sidebar .active a:hover {
     background-color: #EFEFEF; }
+
+@media only screen and (max-width: 991px) {
+  #phone-number {
+    margin-bottom: 36px; } }
 
 @media only screen and (max-width: 991px) {
   #contact-form {
